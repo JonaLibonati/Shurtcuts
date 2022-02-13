@@ -1,17 +1,13 @@
-@echo off
+subl=sublime_text $* &rem It is necesary add the sublime text directory to PATH (System environment variables) 
 
-set ruta=%CD%
+desk=cd C:\Users\Jona\Desktop
 
-DOSKEY subl=sublime_text $* &rem It is necesary add the sublime text directory to PATH (System environment variables) 
+ls=dir/b
 
-DOSKEY desk=cd C:\Users\Jona\Desktop
+search=start https://www.google.com/search?q=$*
 
-DOSKEY user=cd %HOMEPATH%
+tube=start https://www.youtube.com/results?search_query=$*
 
-DOSKEY search= start https://www.google.com/search?q=$*
+user=cd %HOMEPATH%
 
-DOSKEY tube= start https://www.youtube.com/results?search_query=$*
-
-DOSKEY ls=dir/b
-
-pause
+wpp=start https://api.whatsapp.com/send?phone=$*
